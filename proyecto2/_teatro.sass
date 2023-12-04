@@ -1,0 +1,31 @@
+.teatro
+    height: 55vh
+    margin: 30px
+    @include display(flex, space-between, row, center)
+    font-size: 20px
+    color: $colorParrafo
+    &_obras
+        h1
+            text-decoration: underline $colorHover
+        ul
+            list-style: none
+            margin: 10px
+    &_presentacion
+        height: 55vh
+        margin: 10px
+        &_fotos
+            height: 50vh
+            width: 700px
+            overflow-y: scroll
+            overflow-x: hidden
+            &::-webkit-scrollbar
+                width: 10px
+                background: rgba(225,225 ,225, 0.5 )
+                border-radius: 3px
+            &::-webkit-scrollbar-thumb
+                background-color: $colorFondo2
+                border-radius: 10px
+            img
+                @extend .teatro_presentacion_fotos
+                aspect-ratio: 1/1
+                border-radius: 10px

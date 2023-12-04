@@ -1,0 +1,19 @@
+nav
+    @include display(flex, space-between)
+    font-family: 'Oswald', sans-serif
+    width: 100%
+    height: 8vh
+    background: $colorParrafo
+    p
+        color: $colorFondo
+        @include display(flex, center, null, center )
+        margin: 10px
+        font-size: 20px
+    .navegacion
+        @extend p
+        a
+            @extend p
+            text-decoration: none
+        a:hover
+            text-decoration: underline $colorHover
+            transition: all ease-in-out 0.5s

@@ -1,0 +1,23 @@
+.perfil
+    height: 50vh
+    @include display(flex, start, null, center)
+    background: $colorFondo2
+    top: 8vh
+    img
+        height: 50vh
+    &_info
+        color: $colorFondo
+        font-weight: 200
+        border: 2px solid
+        height: 70%
+        width: 70%
+        margin: 40px
+        h1
+            font-size: 35px
+            margin-left: 15px
+        p
+            @include display(flex, center, null ,center)
+            font-size: 30px
+
+@media (min-width: 68px)
+    width: 100%
